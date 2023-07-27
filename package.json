@@ -1,0 +1,15 @@
+{
+  "name": "cypress_guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:login_page": "npx cypress run --spec cypress/e2e/loginPage.cy.js"
+  },
+  "author": "Anshita Bhasin",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.2",
+    "cypress-mochawesome-reporter": "^3.5.1"
+  }
+}
