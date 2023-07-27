@@ -9,11 +9,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
 
     - name: Run Cypress Test
       uses: cypress-io/github-action@v5
       with:
         command: npx cypress run
         browser: chrome
+
+    - name: Upload Reports
+      uses: actions/upload-artifact@v3
+      with:
+       name: HTML Report
+       path: cypressTestReport.html
